@@ -1,2 +1,2 @@
-# NFCU Job Notifier
- A Python applicain to send Discord webhooks for new/removed jobs for NFCU
+# 🌐 NFCU Job Notifier
+ A Python application to send Discord webhooks for new/removed jobs for NFCU
