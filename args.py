@@ -30,7 +30,7 @@ def parse_time_interval(value):
 
 def parse_arguments():
     parser = argparse.ArgumentParser(
-        description="Have the announcements feed for Steam games and groups sent over Discord webhooks."
+        description="A Python application to send Discord webhooks for new/removed jobs for NFCU."
     )
     parser.add_argument(
         "--webhook",
@@ -42,6 +42,7 @@ def parse_arguments():
     parser.add_argument(
         "--categories",
         type=str,
+        metavar="CATEGORY",
         choices=[
             "analyst",
             "branch-office",
@@ -67,6 +68,7 @@ def parse_arguments():
     parser.add_argument(
         "--locations",
         type=str,
+        metavar="LOCATION",
         choices=["pensacola-fl", "vienna-va", "winchester-va", "remote"],
         nargs="+",
         help="Locations of the jobs you want to monitor. If no location is passed it will search all.",
@@ -94,7 +96,7 @@ def parse_arguments():
     parser.add_argument(
         "--force-old",
         action="store_true",
-        help="Send webhook notifications first run when preloading --archive file.",
+        help="Send webhook notifications on first run when preloading --archive file.",
     )
     args = parser.parse_args()
     return args
