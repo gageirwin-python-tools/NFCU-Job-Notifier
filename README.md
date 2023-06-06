@@ -53,4 +53,4 @@ Continually check the job postings for `remote` positions for `information-techn
 ```bash
 python nfcu_jobs.py --categories "information-technology" "analyst" --locations "remote" "winchester-va" --continuous --interval "1h" --webhook "DISCORD_WEBHOOK"
 ```
-Continually check the job postings for `remote` or `winchester-va` positions for `information-technology` and `analyst` every 1 days.
+Continually check the job postings for `remote` and `winchester-va` positions for `information-technology` and `analyst` every 1 days.
