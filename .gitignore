@@ -153,3 +153,4 @@ cython_debug/
 
 *.bat
 *test*
+nfcu_jobs.txt
